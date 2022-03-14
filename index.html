@@ -1,0 +1,435 @@
+<!DOCTYPE html ><html>
+    <head>
+        <title>internship</title>
+        <meta charset="UTF 8">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                <img src="C:\Users\abhimanyu\Desktop\internship\img\download.svg" alt="logo" width="100%" height="100%">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navMenu">
+              <ul class="navbar-nav ms-auto">
+                  <li class="nav-item dropdown">
+                      <a href="#" class= "nav-link">Service </a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a href="#" class= "nav-link">Solution </a>
+                </li>
+                  <li class="nav-item dropdown">
+                    <a href="#" class= "nav-link">Inslight </a>
+                    <li class="nav-item ">
+                       <a href="#" class="btn btn-warning btn-lg active text-light" role="button" aria-pressed="true">Contact Us</a>
+                    </li>
+                </li>
+              </ul>
+              </div>
+            </div>
+          </nav>
+    
+
+ 
+          <!-- Carousel -->
+<div class="container">
+  <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+
+
+
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="C:\Users\abhimanyu\Desktop\internship\img\tech-pic.jpg" alt="Los Angeles" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="C:\Users\abhimanyu\Desktop\internship\img\ai_pic1.jpg" alt="Chicago" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="C:\Users\abhimanyu\Desktop\internship\img\laptop1.jpg" alt="New York" class="d-block w-100">
+    </div>
+  </div>
+
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+  
+</div>
+
+
+
+
+<!-- service -->
+
+<div class="text-center">
+  <h1 class="text-success">Service</h1>
+  <p class="text-muted fw-bold ">
+         We are full-fledged software services company focusing on design lead product engineering and integration services. Our key<br> 
+        Center Of Excellence (COE) are Product Engineering, QualityAscent and DataTandem. These are the three pillars on which any<br>
+       business build it’s development, quality, and data integration/data analytics. We invest heavily in business innovation that matters.<br> 
+                           Future of Work as our fourth pillar that will assist you shine as the market leader.<br>
+  </p>
+</div>
+
+<!--end sevice-->
+
+
+<form role="form" id="formfield"  method="post"  onsubmit="return validateForm();"  >
+  <input type="hidden" name="action" value="add_form" /> 
+  <section class="h-100 h-custom gradient-custom-2">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12">
+        <div class="card card-registration card-registration-2" style="border-radius: 15px;">
+          <div class="card-body p-0">
+            <div class="row g-0">
+              <div class="col-lg-6">
+                <div class="p-5">
+                  <h3 class="fw-normal mb-5" style="color: #5cb85c;">General Infomation</h3>
+
+                  <div class="mb-4 pb-2">
+                    <select class="select" id="namesalute">
+                      <option value="1">Mr</option>
+                      <option value="2">Ms</option>
+                      <option value="3">Other</option>
+                      
+                    </select>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6 mb-4 pb-2">
+
+                      <div class="form-outline">
+                        <label class="form-label" for="form3Examplev2">First name</label>
+                        <input type="text" id="fname" placeholder="Enter First Name" class="form-control form-control-lg"  />
+                        <span id="error1"></span>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field</div>
+                      </div>
+
+                    </div>
+                    <div class="col-md-6 mb-4 pb-2">
+
+                      <div class="form-outline">
+                        <label class="form-label" for="form3Examplev3">Last name</label>
+                        <input type="text" id="lname" placeholder="Enter Last Name" class="form-control form-control-lg" />
+                        <span id="error2"></span>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field</div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="mb-4 pb-2" id="position">
+                    <select class="select" required>
+                      <option value="1">Position</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>     
+                      <option value="4">Four</option>
+                      <span id="error3"></span>
+                      <div class="valid-feedback">Valid.</div>
+                      <div class="invalid-feedback">Please fill out this field</div>                    
+                    </select>
+                  </div>
+
+                  <div class="mb-4 pb-2">
+                    <div class="form-outline">
+                      <label class="form-label" for="form3Examplev4">Department</label>
+                      <input type="text" id="department" placeholder="Department" class="form-control form-control-lg" />
+                      <span id="error4"></span>
+                      <div class="valid-feedback">Valid.</div>
+                      <div class="invalid-feedback">Please fill out this field</div>                   
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6 mb-4 pb-2">
+
+                      <div class="form-outline">
+                        <label class="form-label" for="form3Examplev5">Bussines Arena</label>
+                        <input type="text" id="ba" placeholder="Bussines Arena" class="form-control form-control-lg" />
+                        <span id="error5"></span>
+                      </div>
+
+                    </div>
+
+                  </div>  
+                  <div class="col-md-6">
+
+                    <select class="select" id="employees">
+                      <option value="1">Employees</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                      <option value="4">Four</option>
+                    </select>
+                    <span id="error6"></span>
+                </div>
+
+                </div>
+              </div>
+              <div class="col-lg-6 bg-indigo text-white">
+                <div class="p-5">
+                  <h3 class="fw-normal mb-5">Contact Details</h3>
+
+                  <div class="mb-4 pb-2">
+                    <div class="form-outline form-white">
+                      <input type="text" id="aline1" class="form-control form-control-lg" />
+                      <label class="form-label" for="form3Examplea2">Address Line 1</label>
+                      <span id="error7"></span>
+                      
+                    </div>
+                  </div>
+
+                  <div class="mb-4 pb-2">
+                    <div class="form-outline form-white">
+                      <input type="text" id="aline2" class="form-control form-control-lg" />
+                      <label class="form-label" for="form3Examplea3">Address Line 2 </label>
+                      <span id="error8"></span>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-5 mb-4 pb-2">
+
+                      <div class="form-outline form-white">
+                        <input type="text" id="zcode" class="form-control form-control-lg" />
+                        <label class="form-label" for="form3Examplea4">Zip Code</label>
+                        <span id="error9"></span>
+                      </div>
+
+                    </div>
+                    <div class="col-md-7 mb-4 pb-2">
+
+                      <div class="form-outline form-white">
+                        <input type="text" id="state" class="form-control form-control-lg" />
+                        <label class="form-label" for="form3Examplea5">State</label>
+                        <span id="error10"></span>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="mb-4 pb-2">
+                    <div class="form-outline form-white">
+                      <input type="text" id="country" class="form-control form-control-lg" />
+                      <label class="form-label" for="form3Examplea6">Country</label>
+                      <span id="error11"></span>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-5 mb-4 pb-2">
+
+                      <div class="form-outline form-white">
+                        <input type="text" id="ccode" class="form-control form-control-lg" />
+                        <label class="form-label" for="form3Examplea7">Country Code</label>
+                        <span id="error12"></span>
+                      </div>
+
+                    </div>
+                    <div class="col-md-7 mb-4 pb-2">
+
+                      <div class="form-outline form-white">
+                        <input type="number" id="pno" class="form-control form-control-lg" />
+                        <label class="form-label" for="form3Examplea8">Phone Number</label>
+                        <span id="error13"></span>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="mb-4">
+                    <div class="form-outline form-white">
+                      <input type="email" id="yemail" class="form-control form-control-lg" />
+                      <label class="form-label" for="form3Examplea9">Your Email</label>
+                      <span id="error14"></span>
+                    </div>
+                  </div>
+
+                  <div class="form-check d-flex justify-content-start mb-4 pb-3">
+                    <input
+                      class="form-check-input me-3"
+                      type="checkbox"
+                      value=""
+                      id="terms"
+                    />
+                    <label class="form-check-label text-white" for="form2Example3">
+                      I do accept the <a href="#!" class="text-white"><u>Terms and Conditions</u></a> of your site.
+                    </label>
+                    <span id="error15"></span>
+                  </div>
+
+                  <button type="button" class="btn btn-light btn-lg" data-mdb-ripple-color="dark" id="register"  >Register</button>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</form>
+
+<!--hide Preview-->
+<div class="container text-muted fw-bold  " id="wel">
+  <h1 class="mt-5">Preview</h1>
+  <div class="row">
+    <div class="col-md-6 p-3">
+  <b>First Name :</b><span id="FNAME"></span><br>
+  <b>Last Name :</b><span id="LNAME"></span><br>
+  <b>Position :</b> <span id="POSITION"></span><br>
+  <b>Bussines :</b> <span id="BA"></span><br>
+  <b>Employees :</b> <span id="EMPLOYEES"></span><br>
+  </div>
+  <div class="col-md-6 p-3">
+    <b>Address Line 1 :</b> <span id="ALINE1"></span><br>
+    <b>Address Line 2 :</b> <span id="ALINE2"></span><br>
+    <b>Zip Code :</b> <span id="ZCODE"></span><br>
+    <b>State :</b> <span id="STATE"></span><br>
+    <b>Country :</b> <span id="COUNTRY"></span><br>
+    <b>Country Code  :</b> <span id="CCODE"></span></b>
+    <b>Phone No :</b> <span id="PNO"></span><br>
+    <b>Email :</b> <span id="YEMAIL"></span></b>
+  </div>
+  </div>
+</div>
+
+
+<!-- Footer -->
+
+<footer id="footer">
+  <div class="footer-newsletter mt-5">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-6">
+                  <h4>Our Newsletter</h4>
+                  <p>Subscribe For Our New Launch </p>
+              </div>
+              <div class="col-lg-6">
+                  <form action="" method="post"> <input type="email" name="email"><input type="submit" value="Subscribe"> </form>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="footer-top">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-3 col-md-6 footer-links">
+                  <h4>Useful Links</h4>
+                  <ul>
+                      <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                      <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+                      <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+                      <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+                      <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                  </ul>
+              </div>
+              <div class="col-lg-3 col-md-6 footer-links">
+                  <h4>Our Services</h4>
+                  <ul>
+                      <li><i class="bx bx-chevron-right"></i> <a href="#">Product Engineering</a></li>
+                      <li><i class="bx bx-chevron-right"></i> <a href="#">Quality Engineering</a></li>
+                      <li><i class="bx bx-chevron-right"></i> <a href="#">Data Engineeringt</a></li>
+                      <li><i class="bx bx-chevron-right"></i> <a href="#">DevOps</a></li>
+                      <li><i class="bx bx-chevron-right"></i> <a href="#">Design</a></li>
+                  </ul>
+              </div>
+              <div class="col-lg-3 col-md-6 footer-contact">
+                  <h4>Contact Us</h4>
+                  <p> #507, SRS IT Tower, <br> Sector 31 Near Mewla Maharajpur Metro Station, <br> Haryana 121003 <br><br> <strong>Phone:</strong> +91987654321<br> <strong>Email:</strong> info@Venture7.com<br> </p>
+              </div>
+              <div class="col-lg-3 col-md-6 footer-info">
+                  <h3>About Venture 7</h3>
+                  <p>We take pride in building innovative technology solutions for best customer experience.</p>
+                  <div class="social-links mt-3"> <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a> <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a> <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a> </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="container">
+      <div class="copyright"> © Copyright <strong><span>Venture 7</span></strong>. All Rights Reserved </div>
+      <div class="credits"> Designed by <a href="#">Venture 7</a> </div>
+  </div>
+</footer>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <!--<script src="js/bootstrap.js"></script> !-->
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+       <script>
+        $(document).ready(function(){
+      
+        // jQuery methods go here...
+       $("#register").click(function(){
+       // $("#formfield").hide();
+$("#wel").show();
+  var Salute=$("#namesalute").val();
+  
+  $("#SNAME").html(Salute);
+
+  var Fname=$("#fname").val();
+  $("#FNAME").html(Fname);
+
+  var Lname=$("#lname").val();
+  $("#LNAME").html(Lname);
+
+  var Position=$("#position").val();
+  $("#POSITION").html(Position);
+
+  var Ba=$("#ba").val();
+  $("#BA").html(Ba);
+
+  var Employees=$("#employees").val();
+  $("#EMPLOYEES").html(Employees);
+
+  var Aline1=$("#aline1").val();
+  $("#ALINE1").html(Aline1);
+
+  var Aline2=$("#aline2").val();
+  $("#ALINE2").html(Aline2);
+
+  var Zcode=$("#zcode").val();
+  $("#ZCODE").html(Zcode);
+
+  var State=$("#state").val();
+  $("#STATE").html(State);
+
+  var Country=$("#country").val();
+  $("#COUNTRY").html(Country);
+  
+  var Ccode=$("#ccode").val();
+  $("#CCODE").html(Ccode);
+
+  var Pno=$("#pno").val();
+  $("#PNO").html(Pno);
+
+  var Yemail=$("#yemail").val();
+  $("#YEMAIL").html(Yemail);
+
+      
+       })
+        });
+        
+      </script>
+      
+    </body>
+</html>
